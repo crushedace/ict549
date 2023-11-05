@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d0c88e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.twoupremake.GameController">
+   <children>
+      <Button fx:id="HeadsButton" layoutX="58.0" layoutY="258.0" mnemonicParsing="false" onAction="#HeadsButtonOnAction" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #7C9082;" text="2X Heads" />
+      <Button fx:id="TailsButton" layoutX="230.0" layoutY="258.0" mnemonicParsing="false" onAction="#TailsButtonOnAction" prefHeight="25.0" prefWidth="163.0" style="-fx-background-color: #7C9082;" text="2X Tails" />
+      <Button layoutX="58.0" layoutY="346.0" mnemonicParsing="false" style="-fx-background-color: #7C9082;" text="log out" />
+      <Label fx:id="scoreLabel" layoutX="48.0" layoutY="44.0" prefHeight="25.0" prefWidth="130.0" text="score:" />
+      <Label layoutX="404.0" layoutY="24.0" text="HIGH SCORES!!" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="Highscore" layoutX="385.0" layoutY="61.0" onEditStart="#HighScore" prefHeight="301.0" prefWidth="200.0" />
+      <Button fx:id="SubmitScore" layoutX="258.0" layoutY="69.0" mnemonicParsing="false" onAction="#SubmitScore" style="-fx-background-color: #7C9082;" text="submit score" />
+      <TextField fx:id="UserScore" layoutX="48.0" layoutY="69.0" onAction="#SubmitScore" prefHeight="25.0" prefWidth="209.0" promptText="Enter username to confirm Highscore" />
+      <ImageView fx:id="coin1" fitHeight="147.0" fitWidth="163.0" layoutX="79.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/java%20projects/2upRemake/src/main/java/com/example/twoupremake/Gold_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin2" fitHeight="147.0" fitWidth="163.0" layoutX="227.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/java%20projects/2upRemake/src/main/java/com/example/twoupremake/Gold_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
